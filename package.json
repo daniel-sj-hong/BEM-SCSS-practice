@@ -19,9 +19,13 @@
   },
   "homepage": "https://github.com/daniel-sj-hong/BEM-SCSS-practice#readme",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "sass": "^1.43.4"
   },
   "devDependencies": {
+    "css-loader": "^6.5.1",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
     "webpack": "^5.61.0",
     "webpack-cli": "^4.9.1"
   }
