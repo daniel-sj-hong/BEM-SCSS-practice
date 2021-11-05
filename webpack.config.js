@@ -17,5 +17,15 @@ module.exports = {
         ]
       }
     ]
+  },
+  mode: 'development',
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "public/"),
+    },
+    port: 3000,
+    devMiddleware: {
+      publicPath: "https://localhost:3000/dist/",
+    }
   }
 };
