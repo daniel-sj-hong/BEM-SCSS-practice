@@ -1,21 +1,35 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   margin: 0;
-  padding: 30px 10%;
   background-color: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+  width: 100vw;
+}
+
+.container {
+  padding: 30px 10%;
 }
 
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__shapes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header__purple {
@@ -23,6 +37,7 @@ body {
   border-radius: 50%;
   width: 20px;
   height: 20px;
+  margin-top: 15px;
 }
 
 .header__pink {
@@ -31,5 +46,65 @@ body {
   height: 35px;
   border-radius: 20px;
   margin-left: 9px;
+}
+
+.header__list {
+  list-style: none;
+  margin-left: 121px;
+  padding-left: 0;
+}
+
+.header__item {
+  display: inline-block;
+  padding-right: 40px;
+  color: #4B5D68;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.header__item--active {
+  font-weight: bold;
+  color: #212353;
+}
+
+.header__arrow {
+  width: 20px;
+  height: 2px;
+  background-color: #9C69E2;
+  position: relative;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 3px;
+  border-radius: 2px;
+}
+
+.header__arrow::after {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 2px;
+  background-color: #9C69E2;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  right: -1px;
+  bottom: 2px;
+  border-radius: 2px;
+}
+
+.header__arrow::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 2px;
+  background-color: #9C69E2;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  right: -1px;
+  bottom: -2px;
+  border-radius: 2px;
 }
 /*# sourceMappingURL=styles.css.map */

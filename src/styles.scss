@@ -1,22 +1,33 @@
 * {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   margin: 0;
-  padding: 30px 10%;
   background-color: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+  width: 100vw;
+}
+
+.container {
+  padding: 30px 10%;
 }
 
 .header {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
+
+  &__shapes {
+    display: flex;
+  }
 
   &__purple {
     background-color: #9C69E2;
     border-radius: 50%;
     width: 20px;
     height: 20px;
+    margin-top: 15px;;
   }
 
   &__pink {
@@ -25,5 +36,61 @@ body {
     height: 35px;
     border-radius: 20px;
     margin-left: 9px;
+  }
+
+  &__list {
+    list-style: none;
+    margin-left: 121px;
+    padding-left: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    padding-right: 40px;
+    color: #4B5D68;
+    font-weight: 500;
+    font-size: 16px;
+
+    &--active {
+      font-weight: bold;
+      color: #212353
+    }
+  }
+
+  &__arrow {
+    width: 20px;
+    height: 2px;
+    background-color: #9C69E2;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    bottom: 3px;
+    border-radius: 2px;
+  }
+
+  &__arrow::after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 2px;
+    background-color: #9C69E2;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -1px;
+    bottom: 2px;
+    border-radius: 2px;
+  }
+
+  &__arrow::before {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 2px;
+    background-color: #9C69E2;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: -1px;
+    bottom: -2px;
+    border-radius: 2px;
   }
 }

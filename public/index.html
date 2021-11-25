@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link href="src/styles.css">
   <title>Document</title>
 </head>
@@ -12,8 +15,19 @@
 
     <header>
       <div class="header">
-        <div class="header__purple"></div>
-        <div class="header__pink"></div>
+        <div class="header__shapes">
+          <div class="header__purple"></div>
+          <div class="header__pink"></div>
+        </div>
+        <nav>
+          <ul class="header__list">
+            <li class="header__item header__item--active">About</li>
+            <li class="header__item">Help</li>
+            <li class="header__item">Features</li>
+            <li class="header__item">Signup</li>
+          </ul>
+        </nav>
+        <a href="#"><button class="header__button">Request Demo <span class="header__arrow"></span></button></a>
       </div>
     </header>
   </div>
