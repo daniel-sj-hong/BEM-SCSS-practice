@@ -1,1 +1,35 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 10%;
+  background-color: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header__purple {
+  background-color: #9C69E2;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.header__pink {
+  background-color: #F063B8;
+  width: 20px;
+  height: 35px;
+  border-radius: 20px;
+  margin-left: 9px;
+}
+/*# sourceMappingURL=styles.css.map */
