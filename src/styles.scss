@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  background-color: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+  background-color: #F6FAFD;
   width: 100vw;
 }
 
@@ -57,8 +57,19 @@ body {
     }
   }
 
+  &__button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: -1px 4px 6px 0px rgba(0,0,0,0.09);
+    -webkit-box-shadow: -1px 4px 6px 0px rgba(0,0,0,0.09);
+    -moz-box-shadow: -1px 4px 6px 0px rgba(0,0,0,0.09);
+    font-weight: bold;
+  }
+
   &__arrow {
-    width: 20px;
+    width: 18px;
     height: 2px;
     background-color: #9C69E2;
     position: relative;
@@ -66,6 +77,7 @@ body {
     align-items: center;
     bottom: 3px;
     border-radius: 2px;
+    margin-left: 15px;
   }
 
   &__arrow::after {
