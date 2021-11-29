@@ -1,3 +1,5 @@
+@import "./variables";
+
 .header {
   display: flex;
   align-items: center;
@@ -9,7 +11,7 @@
   }
 
   &__purple {
-    background-color: #9C69E2;
+    background-color: $purple;
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -17,7 +19,7 @@
   }
 
   &__pink {
-    background-color: #F063B8;
+    background-color: $pink;
     width: 20px;
     height: 35px;
     border-radius: 20px;
@@ -33,7 +35,7 @@
   &__item {
     display: inline-block;
     padding-right: 40px;
-    color: #4B5D68;
+    color: #$mainFontColor;
     font-weight: 500;
     font-size: 16px;
 
@@ -62,7 +64,7 @@
   &__arrow {
     width: 18px;
     height: 2px;
-    background-color: #9C69E2;
+    background-color: $purple;
     position: relative;
     display: inline-block;
     align-items: center;
@@ -76,7 +78,7 @@
     display: inline-block;
     width: 7px;
     height: 2px;
-    background-color: #9C69E2;
+    background-color: $purple;
     transform: rotate(45deg);
     position: absolute;
     right: -1px;
@@ -89,7 +91,7 @@
     display: inline-block;
     width: 7px;
     height: 2px;
-    background-color: #9C69E2;
+    background-color: $purple;
     transform: rotate(-45deg);
     position: absolute;
     right: -1px;
