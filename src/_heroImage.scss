@@ -1,0 +1,11 @@
+@import "./variables";
+
+.hero {
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    width: 50%;
+    height: 50%;
+  }
+}
