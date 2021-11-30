@@ -2,8 +2,18 @@
 
 .hero2 {
   background-color: $lightPink;
-  // padding: 20px;
-  width: 90%;
+  padding: 20px;
+  width: 100%;
   @include centerAll();
   margin: auto;
+  margin-top: 50px;
+  border-radius: 50px;
+
+  &__bigText {
+    font-weight: 700;
+    font-family: Helvetica;
+    font-size: 40px;
+    color: $bigFontColor;
+    line-height: 130%;
+  }
 }
