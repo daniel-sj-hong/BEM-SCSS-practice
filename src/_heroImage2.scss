@@ -2,4 +2,8 @@
 
 .hero2 {
   background-color: $lightPink;
+  // padding: 20px;
+  width: 90%;
+  @include centerAll();
+  margin: auto;
 }
