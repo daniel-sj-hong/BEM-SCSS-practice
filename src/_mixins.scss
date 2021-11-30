@@ -27,3 +27,9 @@
   color: #fff;
   font-weight: 500;
 }
+
+@mixin centerAll() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
