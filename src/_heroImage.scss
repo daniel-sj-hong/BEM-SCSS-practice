@@ -1,34 +1,37 @@
 @import "./variables";
+@import "./mixins";
 
 .hero {
   // justify-content: center;
   // align-items: center;
+  position: relative;
 
   & .heroImage {
-    width: 60%;
-    position: absolute;
-    top: 23em;
-    left: 35em;
+    width: 70%;
+    margin-top: 14%;
+    // margin-right: 15%
   }
 
   &__image {
+    display: flex;
+    justify-content: flex-end;
     // margin-left: auto;
     // margin-right: 50px;
 
   }
 
   &__bigText {
-    font-size: 80px;
+    font-size: 85px;
     font-family: 'Helvetica';
     color: $bigFontColor;
-    position: absolute;
-    top: 3em;
     line-height: 110%;
+    position: absolute;
+    top: 8%;
   }
 
   &__text {
     position: absolute;
-    top: 30em;
+    top: 48%;
     font-size: 18px;
     line-height: 28.8px;
     font-weight: 500;
@@ -38,6 +41,8 @@
   &__button {
     @include learnMoreButton($purple);
     position: absolute;
-    top: 57em;
+    white-space: nowrap;
+    left: 0%;
+    top: 75%;
   }
 }
