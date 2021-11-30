@@ -33,4 +33,11 @@
     line-height: 28.8px;
     font-weight: 500;
   }
+
+
+  &__button {
+    @include learnMoreButton($purple);
+    position: absolute;
+    top: 57em;
+  }
 }

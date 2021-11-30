@@ -18,3 +18,12 @@
   border-radius: 2px;
   margin-left: 15px;
 }
+
+@mixin learnMoreButton($background) {
+  padding: 18px 30px;
+  border: none;
+  border-radius: 40px;
+  background-color: $background;
+  color: #fff;
+  font-weight: 500;
+}
