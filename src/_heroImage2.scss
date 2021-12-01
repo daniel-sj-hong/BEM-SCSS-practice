@@ -16,4 +16,11 @@
     color: $bigFontColor;
     line-height: 130%;
   }
+
+  &__text {
+    line-height: 28.8px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 40px;
+  }
 }
