@@ -1,0 +1,10 @@
+@import "./variables";
+@import "./mixins";
+
+.features {
+
+  &__title {
+    @include centerAll();
+  }
+
+}
