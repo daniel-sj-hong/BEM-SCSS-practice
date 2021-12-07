@@ -5,6 +5,16 @@
 
   &__title {
     @include centerAll();
+    margin-top: 130px;
   }
 
+  &__text {
+    @include centerAll();
+    line-height: 28.8px;
+    margin-top: 34px;
+  }
+
+  &__shape {
+    width: 100%;
+  }
 }
